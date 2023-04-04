@@ -1,3 +1,12 @@
+"""
+去除白色背景
+Example:
+    python wbmatting.py \
+        --model torchscript.pth  \
+        --src testdata/6900068804425.jpg \
+        --device [cpu|cuda] \
+        --output-dir output
+"""
 import torch
 import argparse
 from torchvision import transforms as T
